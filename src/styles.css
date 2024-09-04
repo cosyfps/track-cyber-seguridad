@@ -6,14 +6,18 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+body{
+  color: #0e4166;
+  background-color: #0e4166;
+}
 /* SVG background styling */
 .background-svg {
-  position: absolute;
-  top: 0;
+  position: fixed; /* Cambia a fixed para que el SVG esté fijo en la pantalla */
+  bottom: 0; /* Fija el SVG en la parte inferior */
   left: 0;
   width: 100%;
-  height: 100%;
-  z-index: -1;
+  height: auto; /* Ajusta la altura automáticamente */
+  z-index: -1; /* Asegúrate de que esté detrás del contenido */
   background-color: #0e4166;
   background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
 }
